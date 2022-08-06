@@ -26,12 +26,12 @@ pcall(function()
         for i,v in pairs(Plot["WashingMachines"]:GetChildren()) do 
             GetClothes()
     
-            wait(0.5)
+            wait(0.01)
     
             local CFrame = v["MAIN"].CFrame
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
             
-            wait(0.5)
+            wait(0.01)
             
             local Remote = game.ReplicatedStorage.Events['LoadWashingMachine']
             local Arguments = {
